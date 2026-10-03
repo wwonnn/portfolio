@@ -6,24 +6,16 @@
 
 `index.html`을 더블 클릭하면 브라우저에서 열립니다. 프로그램 설치나 빌드 과정 없이 사용할 수 있습니다. 프로젝트 카드를 누르면 각각의 상세 페이지로 이동합니다. 스크린샷은 클릭하여 확대할 수 있고, Esc로 닫을 수 있습니다.
 
-## GitHub Pages에 올리기
+## GitHub Pages 배포
 
-`wwonnn.github.io` 주소를 사용하려면 계정에 **wwonnn.github.io**라는 이름의 저장소가 필요합니다. 이미 같은 이름의 저장소가 있다면 그 저장소를 사용합니다.
+저장소: [wwonnn/wwonnn.github.io](https://github.com/wwonnn/wwonnn.github.io)
+사이트 주소: [https://wwonnn.github.io/](https://wwonnn.github.io/)
 
-1. GitHub에 로그인하고 [새 저장소 만들기](https://github.com/new)를 엽니다.
-2. Owner는 `wwonnn`, Repository name은 `wwonnn.github.io`로 입력합니다.
-3. GitHub Free를 사용한다면 공개 저장소인 **Public**을 선택합니다. Add README를 켜고 저장소를 만듭니다.
-4. 압축 파일을 풉니다. 저장소에서 **Add file → Upload files**를 선택하고, `portfolio` 폴더 **안에 있는 파일과 폴더**를 업로드합니다. `portfolio` 폴더 자체를 올리는 것이 아니라, 최상위에 `index.html`, `assets`, `projects`가 있어야 합니다. zip 파일 자체는 올리지 않습니다.
-5. 업로드를 Commit한 뒤, 저장소의 **Settings → Pages**로 이동합니다.
-6. **Build and deployment → Source**에서 **Deploy from a branch**를 선택합니다.
-7. Branch는 **main**, 폴더는 **/ (root)**로 선택하고 **Save**를 누릅니다.
-8. 게시가 완료되면 `https://wwonnn.github.io/`에서 확인합니다. 반영에는 최대 10분 정도 걸릴 수 있습니다.
+`.github/workflows/pages.yml`에서 GitHub Actions로 정적 사이트를 배포합니다. `main` 브랜치에 파일을 변경해 올리면 자동으로 사이트를 갱신합니다. 필요한 경우 Actions 탭에서 **Deploy portfolio to GitHub Pages → Run workflow**로 다시 실행할 수 있습니다.
 
-`.nojekyll` 파일도 함께 올려두면 정적 파일을 그대로 제공할 수 있습니다. GitHub 웹 업로드에서 숨김 파일이 선택되지 않아도 이 사이트의 일반 파일 구조는 그대로 작동합니다.
+저장소의 **Settings → Pages → Build and deployment → Source**는 **GitHub Actions**를 사용합니다. 최상위에 `index.html`, `assets`, `projects`가 있어야 하며, 압축 파일 자체를 업로드하지 않습니다. `wwonnn.github.io`라는 저장소 이름 덕분에 `/portfolio/` 없이 계정의 루트 주소를 사용합니다.
 
-이 완성본은 로컬 파일로 준비되어 있으며, GitHub 저장소 생성이나 실제 공개 배포는 수행하지 않았습니다.
-
-공식 안내: [GitHub Pages 사이트 만들기](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site), [게시 소스 설정하기](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+공식 안내: [GitHub Pages 사이트 유형](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages), [Actions 배포](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
 ## 파일 구성과 수정
 
