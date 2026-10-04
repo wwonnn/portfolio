@@ -1,0 +1,4 @@
+@media (max-width: 520px) {
+  .skill-system-gallery { grid-template-columns: 1fr; }
+  .detail-section .skill-system-gallery .image-zoom img { height: 320px; }
+}
