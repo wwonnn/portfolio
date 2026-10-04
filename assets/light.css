@@ -82,7 +82,7 @@ body{font-family:"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;bac
 .footer{background:#f5f6f8}
 .detail-title h1{font-weight:600;color:#2c4263}
 .detail-cover,.image-zoom{border-radius:5px}
-.detail-cover{background:#e8ebf0}
+.detail-cover,.image-zoom{background:#e8ebf0}
 .detail-section h2,.overview h2{font-weight:600}
 .detail-section>p:not(.eyebrow),.overview p:not(.eyebrow),.contribution-list{font-size:15px;line-height:2.05}
 .detail-nav{font-size:12px}
