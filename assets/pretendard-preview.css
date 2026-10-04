@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  font-weight: 45 920;
+  font-display: swap;
+  src: url("fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+:root {
+  --portfolio-font: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+}
+body, button, input, select, textarea,
+.light-hero h1, .eyebrow, .mono, .hero-stack, .card-meta,
+.timeline li > span, .intro-strip > span:last-child,
+.wordmark-sub, .profile-mini span, .brand-icon, .formula {
+  font-family: var(--portfolio-font);
+}
+
+/* Larger reading sizes, with compact limits for the existing one-line titles. */
+body { font-size: 18px; }
+.wordmark { font-size: 19px; }
+.wordmark-sub { font-size: 12px; }
+.nav-row nav { font-size: 15px; }
+.eyebrow, .hero-copy .eyebrow { font-size: 12px; }
+.light-hero h1 { font-size: clamp(44px, 6.3vw, 88px); }
+.hero-intro { font-size: 18px; }
+.hero-description { font-size: 16px; }
+.hero-stack { font-size: 13px; }
+.about h2, .section-heading h2 { font-size: 38px; }
+.about-statement .tags span { font-size: 14px; }
+.value h3 { font-size: 28px; }
+.value p, .skill-row p { font-size: 16px; }
+.skills h2 { font-size: 32px; }
+.skill-row h3 { font-size: 19px; }
+.resume-education-header h2, .resume-activity-header h2 { font-size: 38px; }
+.experience .resume-main h3, .experience .resume-activities h3 { font-size: 21px; }
+.experience .resume-item h4 { font-size: 19px; }
+.experience .resume-item p, .experience .timeline p, .timeline a { font-size: 16px; }
+.resume-item .mono, .timeline li > span { font-size: 13px; }
+.project-timeline summary { font-size: 15px; }
+.project-timeline .timeline li > span { font-size: 12px; }
+.project-timeline .timeline a { font-size: 14px; }
+.intro-strip { font-size: 14px; }
+.intro-strip > span:last-child { font-size: 12px; }
+.filters button { font-size: 14px; }
+.card-number { font-size: 12px; }
+.card-meta { font-size: 12px; letter-spacing: .015em; }
+.card-content h3 { font-size: 27px; }
+.featured .card-content h3 { font-size: 32px; }
+.card-content > p { font-size: 16px; }
+.tags span, .card-read { font-size: 14px; }
+.contact h2 { font-size: 44px; }
+.contact-links { font-size: 15px; }
+.footer-row .wordmark { font-size: 15px; }
+.footer-row .wordmark-sub { font-size: 12px; }
+.footer-row > span, .footer-row > a:last-child { font-size: 13px; }
+.detail-title h1 { font-size: 58px; }
+.detail-subtitle, .project-modal .detail-subtitle { font-size: 18px; }
+.overview h2, .detail-section h2 { font-size: 31px; }
+.overview p:not(.eyebrow), .detail-section > p:not(.eyebrow), .contribution-list { font-size: 18px; }
+.overview dt { font-size: 13px; }
+.overview dd { font-size: 15px; }
+.detail-nav { font-size: 14px; }
+.detail-links .button, .back-link { font-size: 14px; }
+.gallery figcaption { font-size: 13px; }
+.formula { font-size: 14px; }
+.project-pagination > a:first-child { font-size: 14px; }
+.project-pagination .eyebrow { font-size: 12px; }
+.project-pagination strong { font-size: 25px; }
+.project-modal .detail-title h1 { font-size: 46px; }
+.project-modal-toolbar > .eyebrow { font-size: 12px; }
+
+/* A single introduction below ABOUT ME, followed by left-aligned hashtags. */
+.about-top { display: block; }
+.about-statement { margin-top: 22px; text-align: left; }
+.about .about-statement > h2 {
+  font-size: clamp(18px, 5.6vw, 38px);
+  font-weight: 600;
+  letter-spacing: -.055em;
+  line-height: 1.45;
+  color: var(--ink);
+  white-space: nowrap;
+  margin: 0;
+}
+.about-statement .tags { justify-content: flex-start; }
+.about-statement .tags span { margin-left: 0; margin-right: 14px; }
+
+@media (max-width: 1100px) {
+  .experience .resume-item h4 { font-size: 18px; }
+  .experience .timeline p { font-size: 15px; }
+  .resume-item .mono, .timeline li > span { font-size: 12px; }
+}
+@media (max-width: 800px) {
+  .light-hero h1 { font-size: clamp(35px, 6.3vw, 50px); }
+  .hero-intro { font-size: 16px; }
+  .hero-description { font-size: 15px; }
+  .hero-stack { font-size: 12px; }
+  .about h2, .section-heading h2 { font-size: 35px; }
+  .resume-education-header h2, .resume-activity-header h2 { font-size: 35px; }
+  .contact h2 { font-size: 35px; }
+  .experience .timeline p { font-size: 16px; }
+  .detail-title h1 { font-size: 45px; }
+  .project-modal .detail-title h1 { font-size: 38px; }
+  .detail-subtitle, .project-modal .detail-subtitle { font-size: 17px; }
+  .project-pagination strong { font-size: 21px; }
+}
+@media (max-width: 520px) {
+  body { font-size: 17px; }
+  .wordmark { font-size: 16px; }
+  .nav-row nav { font-size: 12px; gap: 10px; }
+  .eyebrow, .hero-copy .eyebrow { font-size: 11px; }
+  .light-hero h1 { font-size: clamp(22px, 7.2vw, 37px); }
+  .hero-intro { font-size: 14px; }
+  .hero-description { font-size: 14px; }
+  .hero-stack { font-size: 10px; gap: 8px; }
+  .hero-stack span + span:before { margin-right: 8px; }
+  .about h2, .section-heading h2 { font-size: 31px; }
+  .about-statement .tags span { font-size: 13px; }
+  .value h3 { font-size: 26px; }
+  .skills h2 { font-size: 30px; }
+  .skill-row h3 { font-size: 18px; }
+  .resume-education-header h2, .resume-activity-header h2 { font-size: 32px; }
+  .experience .resume-main h3 { font-size: 20px; }
+  .experience .resume-item h4 { font-size: 17px; }
+  .experience .resume-item p, .experience .timeline p { font-size: 15px; }
+  .filters button { font-size: 12px; }
+  .card-content h3, .featured .card-content h3 { font-size: 28px; }
+  .card-meta { font-size: 11px; }
+  .tags span, .card-read { font-size: 13px; }
+  .contact h2 { font-size: clamp(19px, 5.4vw, 27px); }
+  .contact-links { font-size: 14px; }
+  .footer-row > span, .footer-row > a:last-child { font-size: 12px; }
+  .detail-title h1 { font-size: 37px; }
+  .project-modal .detail-title h1 { font-size: 32px; }
+  .detail-subtitle, .project-modal .detail-subtitle { font-size: 16px; }
+  .overview h2, .detail-section h2 { font-size: 27px; }
+  .overview p:not(.eyebrow), .detail-section > p:not(.eyebrow), .contribution-list { font-size: 16px; }
+  .overview dd { font-size: 14px; }
+  .detail-links .button { font-size: 13px; }
+  .formula { font-size: 13px; }
+  .project-pagination strong, .project-modal .project-pagination strong { font-size: 18px; }
+}
